@@ -4,7 +4,7 @@ const LoginForm = () => {
     return(
         <div>
             <h2>LoginForm</h2>
-            <form className={styles.Form}>
+            <form className={styles.Form} onSubmit={(e) => loginUser(e)}>
 
                 <label htmlFor="email">Email</label>
                 <input type="email" name="email" />
