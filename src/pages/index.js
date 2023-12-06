@@ -8,6 +8,7 @@ export default function UserProfile({ isLoggedIn, userInformation }) {
     useEffect(() => {
         if (!isLoggedIn) router.push("/login");
     }, [isLoggedIn]);
+    console.log(userInformation)
 
     return(
         <main>

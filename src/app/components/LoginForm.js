@@ -1,6 +1,6 @@
 import styles from "./components.module.css"
 
-const LoginForm = () => {
+const LoginForm = ({ loginUser }) => {
     return(
         <div>
             <h2>LoginForm</h2>
@@ -12,7 +12,7 @@ const LoginForm = () => {
                 <label htmlFor="password">Password</label>
                 <input type="password" name="password" />
                  
-                <button type="submit">Create User</button>
+                <button type="submit">Login</button>
             </form>
         </div>
     );
